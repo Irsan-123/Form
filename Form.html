@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Pendaftaran </title>
+</head>
+
+<body style="background-color: rgb(4, 121, 19);">
+    <div class="container">
+        <div class="judul">
+            <center><h1 style="color: aliceblue;">Form Pendaftaran Kampus</h1></center>
+            <center><h2 style="color: aliceblue;">STT Terpadu Nurul Fikri</h2></center>
+        </div>
+
+        <div class="hr">
+            <hr style="border: 2px solid rgb(255, 255, 255);">
+            <br>
+            <form action="#" method="get" class="fo1">
+            
+            <form id="create_account" action="/signup" method="post">
+                <fieldset id="signup">
+                    <legend style="color: rgb(255, 255, 255);"><h3>Informasi Personal</h3></legend><hr>
+                    <ol>
+                        <li style="color: aliceblue;">
+                            <label style="color: aliceblue;" for="Nama_Lengkap">Nama Lengkap</label>
+                            <input id="Nama_Lengkap" type="text" class="input1"
+                                    autofocus
+                                    name="Nama_Lengkap" placeholder="'Nama Lengkap'">
+                        </li>
+                        <br>
+                        <li style="color: aliceblue;">
+                            <label style="color: aliceblue;" for="Tanggal_Lahir">Tanggal Lahir</label>
+                            <input id="Tanggal_Lahir" type="date" class="input1">
+                        </li>
+                        <br>
+                        <li style="color: aliceblue;">
+                            <label style="color: aliceblue;">Agama</label>
+                            <select name="Agama">
+                                <option value="">-- Pilih Agama --</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Katolik">Katolik</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Buddha">Buddha</option>
+                                <option value="Protestan">Protestan</option>
+                                <option value="Atheis">Atheis</option>
+                            </select>
+                        </li>
+                        <br>
+                        <li style="color: aliceblue;">
+                            <label style="color: aliceblue;">Jenis Kelamin</label>
+                            <div>
+                                <input style="color: aliceblue;" type="radio" name="jenis_kelamin" value="L" checked />Laki-Laki
+                                <input style="color: aliceblue;" type="radio" name="jenis_kelamin" value="P" checked />Perempuan
+                            </div>
+                        </li>
+                    </ol>
+
+                    <legend style="color: rgb(255, 255, 255);"><h3>Informasi Kontak</h3></legend><hr>
+                    <ol>
+                        <li style="color: aliceblue;">
+                            <label style="color: aliceblue;" for="Nomor_Telefon">Nomor Telefon</label>
+                            <input id="Nomor_Telefon" type="tel" class="input1">
+                        </li>
+                        <br>
+                        <li style="color: aliceblue;">
+                            <label style="color: aliceblue;" for="Alamat">Alamat</label>
+                            <input id="Alamat" type="text" class="input1">
+                        </li>
+                        <br>
+                        <li style="color: aliceblue;">
+                            <label style="color: aliceblue;" for="Kota_&_Provinsi">Kota & Provinsi</label>
+                            <input id="Kota_&_Provinsi" type="text" class="input1">
+                        </li>
+                        <br>
+                        <li style="color: aliceblue;">
+                            <label style="color: aliceblue;" for="Email">Email</label>
+                            <input id="Email" type="email" class="input1" placeholder="'user@example.com'" required> 
+                        </li>
+                    </ol>
+
+                    <legend style="color: rgb(255, 255, 255);"><h3>Informasi Perkuliahan</h3></legend><hr>
+                    <ol>
+                        <li style="color: aliceblue;">
+                            <label style="color: aliceblue;">Jurusan</label>
+                            <select name="jurusan">
+                                <option value="">-- Pilih Jurusan --</option>
+                                <option value="Sistem_Informasi">Sistem Informasi</option>
+                                <option value="Teknik_Informatika">Teknik Informatika</option>
+                            </select>
+                        </li>
+                        <br>
+                        <li style="color: aliceblue;">
+                            <label style="color: aliceblue;">Waktu Pembelajaran</label>
+                            <select name="Waktu_Pembelajaran">
+                                <option value="">-- Pilih Waktu Pembayaran --</option>
+                                <option value="Reguler_Pagi">Reguler Pagi</option>
+                                <option value="Reguler_Sore">Reguler Sore</option>
+                                <option value="Reguler_Malam">Reguler Malam</option>
+                            </select>
+                        </li>
+                        <br>
+                        <li style="color: aliceblue;">
+                            <label style="color: aliceblue;" for="bayar"> Pembayaran</label>
+                            <div>
+                                <input type="radio" id="beasiswa" name="bayar" value="beasiswa">
+                                <label style="color: aliceblue;" for="beasiswa" style="margin-right:20px;">Beasiswa</label>
+
+                                <input type="radio" id="cash" name="bayar" value="cash">
+                                <label style="color: aliceblue;" for="cash" style="margin-right:20px;">Cash</label>
+
+                                <input type="radio" id="Bertahap" name="bayar" value="bertahap">
+                                <label style="color: aliceblue;" for="bertahap" style="margin-right:20px;">Bertahap</label>
+                            </div>
+                        </li>
+                    </ol>
+                </fieldset>
+            </form>
+    </div>
+    <br>
+    <center><input type="submit" value="Submit"  id="submit"></center>
+    <br>
+    <br>
+</body>
+</html>
